@@ -702,8 +702,30 @@ const LogoContainer = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
 _c = LogoContainer;
 const SearchContainer = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "search-container",
-        children: "Search"
-    }, void 0, false, {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "search-bar",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                    type: "text"
+                }, void 0, false, {
+                    fileName: "App.js",
+                    lineNumber: 27,
+                    columnNumber: 33
+                }, undefined)
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 27,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                children: "Search"
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 28,
+                columnNumber: 5
+            }, undefined)
+        ]
+    }, void 0, true, {
         fileName: "App.js",
         lineNumber: 26,
         columnNumber: 5
@@ -714,7 +736,7 @@ const Home = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: "Home"
     }, void 0, false, {
         fileName: "App.js",
-        lineNumber: 30,
+        lineNumber: 33,
         columnNumber: 5
     }, undefined);
 _c2 = Home;
@@ -723,7 +745,7 @@ const About = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: "About"
     }, void 0, false, {
         fileName: "App.js",
-        lineNumber: 33,
+        lineNumber: 36,
         columnNumber: 5
     }, undefined);
 _c3 = About;
@@ -732,7 +754,7 @@ const ContactUs = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: "Contact Us"
     }, void 0, false, {
         fileName: "App.js",
-        lineNumber: 36,
+        lineNumber: 39,
         columnNumber: 5
     }, undefined);
 _c4 = ContactUs;
@@ -741,7 +763,7 @@ const Cart = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: "Cart"
     }, void 0, false, {
         fileName: "App.js",
-        lineNumber: 39,
+        lineNumber: 42,
         columnNumber: 5
     }, undefined);
 _c5 = Cart;
@@ -750,28 +772,28 @@ const NavLinks = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Home, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 43,
+                lineNumber: 46,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(About, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 44,
+                lineNumber: 47,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ContactUs, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 45,
+                lineNumber: 48,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cart, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 46,
+                lineNumber: 49,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 42,
+        lineNumber: 45,
         columnNumber: 5
     }, undefined);
 _c6 = NavLinks;
@@ -780,52 +802,127 @@ const Header = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(LogoContainer, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 51,
+                lineNumber: 54,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(NavLinks, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 52,
+                lineNumber: 55,
                 columnNumber: 5
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 50,
+        lineNumber: 53,
         columnNumber: 5
     }, undefined);
 _c7 = Header;
-const Body = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(SearchContainer, {}, void 0, false, {
+const Card = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "card",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                alt: "res-img",
+                className: "res-img",
+                src: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/6b7ab6c81944a491c8436cee302a9243"
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 62,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "res-details",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: "Arun Icecream"
+                    }, void 0, false, {
+                        fileName: "App.js",
+                        lineNumber: 68,
+                        columnNumber: 7
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: "4.8"
+                    }, void 0, false, {
+                        fileName: "App.js",
+                        lineNumber: 69,
+                        columnNumber: 7
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: "desserts,icecreams"
+                    }, void 0, false, {
+                        fileName: "App.js",
+                        lineNumber: 70,
+                        columnNumber: 7
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "App.js",
+                lineNumber: 67,
+                columnNumber: 5
+            }, undefined)
+        ]
+    }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 59,
+        lineNumber: 61,
+        columnNumber: 3
+    }, undefined);
+_c8 = Card;
+const CardContainer = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "card-container",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Card, {}, void 0, false, {
+            fileName: "App.js",
+            lineNumber: 76,
+            columnNumber: 9
+        }, undefined)
+    }, void 0, false, {
+        fileName: "App.js",
+        lineNumber: 75,
+        columnNumber: 5
+    }, undefined);
+_c9 = CardContainer;
+const Body = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(SearchContainer, {}, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 82,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(CardContainer, {}, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 83,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "App.js",
+        lineNumber: 81,
         columnNumber: 9
     }, undefined);
 };
-_c8 = Body;
+_c10 = Body;
 const MainDiv = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Header, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 65,
+                lineNumber: 90,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 66,
+                lineNumber: 91,
                 columnNumber: 5
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 64,
+        lineNumber: 89,
         columnNumber: 3
     }, undefined);
-_c9 = MainDiv;
+_c11 = MainDiv;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(MainDiv, {}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 70,
+    lineNumber: 95,
     columnNumber: 13
 }, undefined)); //const heading = React.createElement("h1",{id:"heading"},"Hello World");
  // const divElement = React.createElement("div", { id: "grandparent" }, [
@@ -856,7 +953,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(MainDiv, {}, void 0, false,
             </div>
     </div>
 </div> */ 
-var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7, _c8, _c9;
+var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7, _c8, _c9, _c10, _c11;
 $RefreshReg$(_c, "LogoContainer");
 $RefreshReg$(_c1, "SearchContainer");
 $RefreshReg$(_c2, "Home");
@@ -865,8 +962,10 @@ $RefreshReg$(_c4, "ContactUs");
 $RefreshReg$(_c5, "Cart");
 $RefreshReg$(_c6, "NavLinks");
 $RefreshReg$(_c7, "Header");
-$RefreshReg$(_c8, "Body");
-$RefreshReg$(_c9, "MainDiv");
+$RefreshReg$(_c8, "Card");
+$RefreshReg$(_c9, "CardContainer");
+$RefreshReg$(_c10, "Body");
+$RefreshReg$(_c11, "MainDiv");
 
   $parcel$ReactRefreshHelpers$4931.postlude(module);
 } finally {

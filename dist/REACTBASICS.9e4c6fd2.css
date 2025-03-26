@@ -1,5 +1,5 @@
 .header {
-  border: solid #000;
+  border: 1px solid #000;
   justify-content: space-between;
   display: flex;
 }
@@ -18,5 +18,34 @@
   padding-top: 80px;
   padding-right: 20px;
   font-size: large;
+}
+
+.search-container {
+  justify-content: space-between;
+  padding: 8px;
+  display: inline-flex;
+}
+
+.search-bar {
+  padding-right: 20px;
+}
+
+.card-container {
+  background-color: #d3d3d3;
+  width: 200px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.card-container:hover {
+  border: 1px solid #000;
+}
+
+.res-img {
+  width: 200px;
+}
+
+.res-details {
+  padding-left: 20px;
 }
 /*# sourceMappingURL=REACTBASICS.9e4c6fd2.css.map */

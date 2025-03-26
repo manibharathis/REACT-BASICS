@@ -23,7 +23,10 @@ const LogoContainer = () =>(
     
 )  
 const SearchContainer = () =>(
-    <div className='search-container'>Search</div>
+    <div className='search-container'>
+    <div className='search-bar'><input type='text'></input></div>
+    <button >Search</button>
+    </div>
 )              
    
 const Home =()=>(
@@ -54,9 +57,31 @@ const Header=()=>(
 
 
 )
+const Card = () => (
+  <div className="card">
+    <img
+      alt="res-img"
+      className="res-img"
+      src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/6b7ab6c81944a491c8436cee302a9243"
+    ></img>
+    <div className='res-details'>
+      <p>Arun Icecream</p>
+      <p>4.8</p>
+      <p>desserts,icecreams</p>
+    </div>
+  </div>
+);
+const CardContainer=()=>(
+    <div className='card-container'>
+        <Card />
+    </div>
+)
 const Body =() =>{
     return(
+        <div>
         <SearchContainer />
+        <CardContainer />
+        </div>
     )
 }
 

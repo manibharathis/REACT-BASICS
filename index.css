@@ -1,7 +1,7 @@
 .header {
     display : flex;
     justify-content: space-between;
-    border: solid black;
+    border: solid black 1px;
 }
 .nav-links{
     display: inline-flex;
@@ -17,4 +17,30 @@
     padding-top: 80px;
     padding-right: 20px;
     font-size: large;
+}
+
+.search-container {
+    padding: 8px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+.search-bar{
+    padding-right: 20px;
+}
+.card-container{
+  background-color: lightgray;
+    width: 200px ;
+    padding: 5px;
+   margin : 5px;
+    
+} 
+.card-container:hover {
+    border: solid black 1px ;
+}
+
+.res-img{
+    width: 200px;
+}
+.res-details{
+    padding-left: 20px;
 }
