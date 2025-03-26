@@ -1,0 +1,22 @@
+.header {
+  border: solid #000;
+  justify-content: space-between;
+  display: flex;
+}
+
+.nav-links {
+  justify-content: end;
+  width: 50%;
+  display: inline-flex;
+}
+
+.logo-img {
+  width: 200px;
+}
+
+.home, .about, .cart, .contact-us {
+  padding-top: 80px;
+  padding-right: 20px;
+  font-size: large;
+}
+/*# sourceMappingURL=REACTBASICS.9e4c6fd2.css.map */
