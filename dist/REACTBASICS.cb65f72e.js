@@ -675,6 +675,10 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
+var _header = require("./components/Header");
+var _headerDefault = parcelHelpers.interopDefault(_header);
+var _body = require("./components/Body");
+var _bodyDefault = parcelHelpers.interopDefault(_body);
 // //main div
 //     //1. header
 //     1.1 logo conteiner
@@ -691,238 +695,29 @@ var _clientDefault = parcelHelpers.interopDefault(_client);
 //2.3.3 title
 //2.3.4 rating
 //2.3.5 cuisine
-const LogoContainer = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-        className: "logo-img",
-        src: "https://www.logodesign.net/logo/smoking-burger-with-lettuce-3624ld.png?nwm=1&nws=1&industry=fast-food&sf=&txt_keyword=All"
-    }, void 0, false, {
-        fileName: "App.js",
-        lineNumber: 22,
-        columnNumber: 5
-    }, undefined);
-_c = LogoContainer;
-const SearchContainer = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "search-container",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "search-bar",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                    type: "text"
-                }, void 0, false, {
-                    fileName: "App.js",
-                    lineNumber: 27,
-                    columnNumber: 33
-                }, undefined)
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 27,
-                columnNumber: 5
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                children: "Search"
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 28,
-                columnNumber: 5
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "App.js",
-        lineNumber: 26,
-        columnNumber: 5
-    }, undefined);
-_c1 = SearchContainer;
-const Home = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "home",
-        children: "Home"
-    }, void 0, false, {
-        fileName: "App.js",
-        lineNumber: 33,
-        columnNumber: 5
-    }, undefined);
-_c2 = Home;
-const About = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "about",
-        children: "About"
-    }, void 0, false, {
-        fileName: "App.js",
-        lineNumber: 36,
-        columnNumber: 5
-    }, undefined);
-_c3 = About;
-const ContactUs = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "contact-us",
-        children: "Contact Us"
-    }, void 0, false, {
-        fileName: "App.js",
-        lineNumber: 39,
-        columnNumber: 5
-    }, undefined);
-_c4 = ContactUs;
-const Cart = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "cart",
-        children: "Cart"
-    }, void 0, false, {
-        fileName: "App.js",
-        lineNumber: 42,
-        columnNumber: 5
-    }, undefined);
-_c5 = Cart;
-const NavLinks = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "nav-links",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Home, {}, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 46,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(About, {}, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 47,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ContactUs, {}, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 48,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cart, {}, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 49,
-                columnNumber: 9
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "App.js",
-        lineNumber: 45,
-        columnNumber: 5
-    }, undefined);
-_c6 = NavLinks;
-const Header = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "header",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(LogoContainer, {}, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 54,
-                columnNumber: 5
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(NavLinks, {}, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 55,
-                columnNumber: 5
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "App.js",
-        lineNumber: 53,
-        columnNumber: 5
-    }, undefined);
-_c7 = Header;
-const Card = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "card",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                alt: "res-img",
-                className: "res-img",
-                src: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/6b7ab6c81944a491c8436cee302a9243"
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 62,
-                columnNumber: 5
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "res-details",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: "Arun Icecream"
-                    }, void 0, false, {
-                        fileName: "App.js",
-                        lineNumber: 68,
-                        columnNumber: 7
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: "4.8"
-                    }, void 0, false, {
-                        fileName: "App.js",
-                        lineNumber: 69,
-                        columnNumber: 7
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: "desserts,icecreams"
-                    }, void 0, false, {
-                        fileName: "App.js",
-                        lineNumber: 70,
-                        columnNumber: 7
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "App.js",
-                lineNumber: 67,
-                columnNumber: 5
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "App.js",
-        lineNumber: 61,
-        columnNumber: 3
-    }, undefined);
-_c8 = Card;
-const CardContainer = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "card-container",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Card, {}, void 0, false, {
-            fileName: "App.js",
-            lineNumber: 76,
-            columnNumber: 9
-        }, undefined)
-    }, void 0, false, {
-        fileName: "App.js",
-        lineNumber: 75,
-        columnNumber: 5
-    }, undefined);
-_c9 = CardContainer;
-const Body = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(SearchContainer, {}, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 82,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(CardContainer, {}, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 83,
-                columnNumber: 9
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "App.js",
-        lineNumber: 81,
-        columnNumber: 9
-    }, undefined);
-};
-_c10 = Body;
 const MainDiv = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Header, {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 90,
+                lineNumber: 30,
                 columnNumber: 5
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 91,
+                lineNumber: 31,
                 columnNumber: 5
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 89,
+        lineNumber: 29,
         columnNumber: 3
     }, undefined);
-_c11 = MainDiv;
+_c = MainDiv;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(MainDiv, {}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 95,
+    lineNumber: 35,
     columnNumber: 13
 }, undefined)); //const heading = React.createElement("h1",{id:"heading"},"Hello World");
  // const divElement = React.createElement("div", { id: "grandparent" }, [
@@ -953,26 +748,15 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(MainDiv, {}, void 0, false,
             </div>
     </div>
 </div> */ 
-var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7, _c8, _c9, _c10, _c11;
-$RefreshReg$(_c, "LogoContainer");
-$RefreshReg$(_c1, "SearchContainer");
-$RefreshReg$(_c2, "Home");
-$RefreshReg$(_c3, "About");
-$RefreshReg$(_c4, "ContactUs");
-$RefreshReg$(_c5, "Cart");
-$RefreshReg$(_c6, "NavLinks");
-$RefreshReg$(_c7, "Header");
-$RefreshReg$(_c8, "Card");
-$RefreshReg$(_c9, "CardContainer");
-$RefreshReg$(_c10, "Body");
-$RefreshReg$(_c11, "MainDiv");
+var _c;
+$RefreshReg$(_c, "MainDiv");
 
   $parcel$ReactRefreshHelpers$4931.postlude(module);
 } finally {
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-dom/client":"hrvwu","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"dVPUn":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-dom/client":"hrvwu","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./components/Header":"7rYoH","./components/Body":"hjG3v"}],"dVPUn":[function(require,module,exports,__globalThis) {
 'use strict';
 module.exports = require("ee51401569654d91");
 
@@ -18867,6 +18651,1868 @@ function $da9882e673ac146b$var$ErrorOverlay() {
     return null;
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}]},["jERri","blcJa"], "blcJa", "parcelRequire0e11", null, null, "http://localhost:1234")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"7rYoH":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$a815 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$a815.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$a815.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _constants = require("../utils/constants");
+const Header = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "header",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                className: "logo-img",
+                src: (0, _constants.LOGO_URL)
+            }, void 0, false, {
+                fileName: "components/Header.js",
+                lineNumber: 5,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "nav-links",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "home",
+                        children: "Home"
+                    }, void 0, false, {
+                        fileName: "components/Header.js",
+                        lineNumber: 7,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "about",
+                        children: "About"
+                    }, void 0, false, {
+                        fileName: "components/Header.js",
+                        lineNumber: 8,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "contact-us",
+                        children: "Contact Us"
+                    }, void 0, false, {
+                        fileName: "components/Header.js",
+                        lineNumber: 9,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "cart",
+                        children: "Cart"
+                    }, void 0, false, {
+                        fileName: "components/Header.js",
+                        lineNumber: 10,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "components/Header.js",
+                lineNumber: 6,
+                columnNumber: 5
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "components/Header.js",
+        lineNumber: 4,
+        columnNumber: 5
+    }, undefined);
+_c = Header;
+exports.default = Header;
+var _c;
+$RefreshReg$(_c, "Header");
+
+  $parcel$ReactRefreshHelpers$a815.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","../utils/constants":"jcEU6","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"jcEU6":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "CDN_URL", ()=>CDN_URL);
+parcelHelpers.export(exports, "LOGO_URL", ()=>LOGO_URL);
+const CDN_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
+const LOGO_URL = 'https://www.logodesign.net/logo/smoking-burger-with-lettuce-3624ld.png?nwm=1&nws=1&industry=fast-food&sf=&txt_keyword=All';
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"hjG3v":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$d308 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$d308.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$d308.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _restrauntList = require("../utils/restrauntList");
+var _restrauntListDefault = parcelHelpers.interopDefault(_restrauntList);
+var _restrauntCard = require("./RestrauntCard");
+var _restrauntCardDefault = parcelHelpers.interopDefault(_restrauntCard);
+var _s = $RefreshSig$();
+const Body = ()=>{
+    _s();
+    const [filterData, setfilterData] = (0, _react.useState)((0, _restrauntListDefault.default));
+    const handleTopRated = ()=>{
+        const filter = filterData.filter((e)=>e.info.avgRating > 4.5);
+        setfilterData(filter);
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "search-container",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    className: "filter",
+                    onClick: handleTopRated,
+                    children: "Fitler Top  Restraunts"
+                }, void 0, false, {
+                    fileName: "components/Body.js",
+                    lineNumber: 21,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "components/Body.js",
+                lineNumber: 17,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card-box",
+                children: filterData.map((res)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "card-container",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restrauntCardDefault.default), {
+                            resData: res
+                        }, res.info.id, false, {
+                            fileName: "components/Body.js",
+                            lineNumber: 26,
+                            columnNumber: 13
+                        }, undefined)
+                    }, res.info.id, false, {
+                        fileName: "components/Body.js",
+                        lineNumber: 25,
+                        columnNumber: 11
+                    }, undefined))
+            }, void 0, false, {
+                fileName: "components/Body.js",
+                lineNumber: 23,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "components/Body.js",
+        lineNumber: 16,
+        columnNumber: 5
+    }, undefined);
+};
+_s(Body, "DTMpFV33YxkNXZ1pFTzR716n5fQ=");
+_c = Body;
+exports.default = Body;
+var _c;
+$RefreshReg$(_c, "Body");
+
+  $parcel$ReactRefreshHelpers$d308.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","../utils/restrauntList":"7ESLM","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./RestrauntCard":"675A4","react":"jMk1U"}],"7ESLM":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+const RES_LIST = [
+    {
+        "info": {
+            "id": "37067",
+            "name": "Subway",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/1/21/b637865d-d025-4850-bbf9-761969eb52bf_37067.JPG",
+            "locality": "Kilpauk",
+            "areaName": "Kilpauk",
+            "costForTwo": "\u20B9350 for two",
+            "cuisines": [
+                "sandwich",
+                "Salads",
+                "wrap",
+                "Healthy Food"
+            ],
+            "avgRating": 4.3,
+            "parentId": "2",
+            "avgRatingString": "4.3",
+            "totalRatingsString": "35K+",
+            "sla": {
+                "deliveryTime": 21,
+                "lastMileTravel": 3.9,
+                "serviceability": "SERVICEABLE",
+                "slaString": "20-25 mins",
+                "lastMileTravelString": "3.9 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-03-28 05:59:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "Rxawards/_CATEGORY-Sandwiches.png",
+                        "description": "Delivery!"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "Delivery!",
+                                    "imageId": "Rxawards/_CATEGORY-Sandwiches.png"
+                                }
+                            }
+                        ]
+                    },
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "35% OFF",
+                "discountTag": "FLAT DEAL"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "4.1",
+                    "ratingCount": "801"
+                },
+                "source": "GOOGLE",
+                "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-13450fd8-0309-4863-a562-97aafc8a83cf"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/chennai/subway-kilpauk-rest37067",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "17443",
+            "name": "Nithya Amirtham",
+            "cloudinaryImageId": "22c1e2d353861e03226cdea759fca730",
+            "locality": "Mylapore",
+            "areaName": "North Mada Street - Mylapore",
+            "costForTwo": "\u20B9200 for two",
+            "cuisines": [
+                "South Indian",
+                "Sweets",
+                "Chinese",
+                "Snacks"
+            ],
+            "avgRating": 4.6,
+            "parentId": "149425",
+            "avgRatingString": "4.6",
+            "totalRatingsString": "153K+",
+            "sla": {
+                "deliveryTime": 34,
+                "lastMileTravel": 6.9,
+                "serviceability": "SERVICEABLE",
+                "slaString": "30-35 mins",
+                "lastMileTravelString": "6.9 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-03-27 23:00:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "v1695133679/badges/Pure_Veg111.png",
+                        "description": "pureveg"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "pureveg",
+                                    "imageId": "v1695133679/badges/Pure_Veg111.png"
+                                }
+                            }
+                        ]
+                    },
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "20% OFF",
+                "subHeader": "UPTO \u20B950"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "4.1",
+                    "ratingCount": "7.6K+"
+                },
+                "source": "GOOGLE",
+                "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-13450fd8-0309-4863-a562-97aafc8a83cf"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/chennai/nithya-amirtham-mylapore-north-mada-street-mylapore-rest17443",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "85699",
+            "name": "Chai Waale",
+            "cloudinaryImageId": "jn8zlvscjn4l29vep3jq",
+            "locality": "Mint St",
+            "areaName": "Mint Street (Sowcarpet)",
+            "costForTwo": "\u20B9150 for two",
+            "cuisines": [
+                "Beverages",
+                "Snacks"
+            ],
+            "avgRating": 4.3,
+            "veg": true,
+            "parentId": "7228",
+            "avgRatingString": "4.3",
+            "totalRatingsString": "8.9K+",
+            "sla": {
+                "deliveryTime": 34,
+                "lastMileTravel": 2.2,
+                "serviceability": "SERVICEABLE",
+                "slaString": "30-35 mins",
+                "lastMileTravelString": "2.2 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-03-28 00:00:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "Green%20Dot%20Awards/Best%20In%20Veg%20Cafe.png",
+                        "description": "Delivery!"
+                    },
+                    {
+                        "imageId": "Rxawards/_CATEGORY-Cafe%20&%20Chai.png",
+                        "description": "Delivery!"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "Delivery!",
+                                    "imageId": "Green%20Dot%20Awards/Best%20In%20Veg%20Cafe.png"
+                                }
+                            },
+                            {
+                                "attributes": {
+                                    "description": "Delivery!",
+                                    "imageId": "Rxawards/_CATEGORY-Cafe%20&%20Chai.png"
+                                }
+                            }
+                        ]
+                    },
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "\u20B9125 OFF",
+                "subHeader": "ABOVE \u20B9299",
+                "discountTag": "FLAT DEAL"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-13450fd8-0309-4863-a562-97aafc8a83cf"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/chennai/chai-waale-mint-st-mint-street-sowcarpet--rest85699",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "376260",
+            "name": "Junior Kuppanna",
+            "cloudinaryImageId": "90e2b3d73591638a2984645422a85379",
+            "locality": "Kodambakkam High Rd",
+            "areaName": "Nungambakkam",
+            "costForTwo": "\u20B9400 for two",
+            "cuisines": [
+                "Biryani",
+                "South Indian"
+            ],
+            "avgRating": 4.3,
+            "parentId": "112209",
+            "avgRatingString": "4.3",
+            "totalRatingsString": "10K+",
+            "sla": {
+                "deliveryTime": 36,
+                "lastMileTravel": 6.3,
+                "serviceability": "SERVICEABLE",
+                "slaString": "35-40 mins",
+                "lastMileTravelString": "6.3 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-03-28 05:59:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "ITEMS",
+                "subHeader": "AT \u20B9149"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-13450fd8-0309-4863-a562-97aafc8a83cf"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/chennai/junior-kuppanna-kodambakkam-high-rd-nungambakkam-rest376260",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "18998",
+            "name": "Chai Kings",
+            "cloudinaryImageId": "ntvnffyvoinl2cqkishv",
+            "locality": "Poonamallee High Road",
+            "areaName": "Purasawalkam",
+            "costForTwo": "\u20B9150 for two",
+            "cuisines": [
+                "Beverages",
+                "Snacks",
+                "Bakery"
+            ],
+            "avgRating": 4.6,
+            "parentId": "2627",
+            "avgRatingString": "4.6",
+            "totalRatingsString": "17K+",
+            "sla": {
+                "deliveryTime": 16,
+                "lastMileTravel": 2.5,
+                "serviceability": "SERVICEABLE",
+                "slaString": "15-20 mins",
+                "lastMileTravelString": "2.5 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-03-27 23:59:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "Rxawards/_CATEGORY-Cafe%20&%20Chai.png",
+                        "description": "Delivery!"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "Delivery!",
+                                    "imageId": "Rxawards/_CATEGORY-Cafe%20&%20Chai.png"
+                                }
+                            }
+                        ]
+                    },
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "30% OFF",
+                "subHeader": "UPTO \u20B975"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-13450fd8-0309-4863-a562-97aafc8a83cf"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/chennai/chai-kings-poonamallee-high-road-purasawalkam-rest18998",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "14096",
+            "name": "Sangeetha Veg Restaurant",
+            "cloudinaryImageId": "oodghmivnc6bxnbrvzzw",
+            "locality": "Egmore",
+            "areaName": "Egmore",
+            "costForTwo": "\u20B9150 for two",
+            "cuisines": [
+                "Chinese",
+                "South Indian"
+            ],
+            "avgRating": 4.6,
+            "parentId": "1260",
+            "avgRatingString": "4.6",
+            "totalRatingsString": "59K+",
+            "sla": {
+                "deliveryTime": 17,
+                "lastMileTravel": 1.8,
+                "serviceability": "SERVICEABLE",
+                "slaString": "15-20 mins",
+                "lastMileTravelString": "1.8 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-03-27 22:45:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "bolt/bolt%206.png",
+                        "description": "bolt!"
+                    },
+                    {
+                        "imageId": "Rxawards/_CATEGORY-South%20Indian.png",
+                        "description": "Delivery!"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "aggregatedDiscountInfoV2": {},
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "bolt!",
+                                    "imageId": "bolt/bolt%206.png"
+                                }
+                            },
+                            {
+                                "attributes": {
+                                    "description": "Delivery!",
+                                    "imageId": "Rxawards/_CATEGORY-South%20Indian.png"
+                                }
+                            }
+                        ]
+                    },
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "3.7",
+                    "ratingCount": "1.7K+"
+                },
+                "source": "GOOGLE",
+                "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-13450fd8-0309-4863-a562-97aafc8a83cf"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/chennai/sangeetha-veg-restaurant-egmore-rest14096",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "146060",
+            "name": "A2B - Adyar Ananda Bhavan",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/1/15/15072eb6-fe76-4357-8d15-9393d84ccd17_146060.jpg",
+            "locality": "Chepauk(D1 police station Adam market)",
+            "areaName": "Triplicane",
+            "costForTwo": "\u20B9300 for two",
+            "cuisines": [
+                "South Indian",
+                "Sweets",
+                "Chinese"
+            ],
+            "avgRating": 4.6,
+            "veg": true,
+            "parentId": "22",
+            "avgRatingString": "4.6",
+            "totalRatingsString": "13K+",
+            "sla": {
+                "deliveryTime": 32,
+                "lastMileTravel": 3.8,
+                "serviceability": "SERVICEABLE",
+                "slaString": "30-35 mins",
+                "lastMileTravelString": "3.8 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-03-27 22:30:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "25% OFF",
+                "subHeader": "ABOVE \u20B92500",
+                "discountTag": "FLAT DEAL"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-13450fd8-0309-4863-a562-97aafc8a83cf"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/chennai/a2b-adyar-ananda-bhavan-chepauk-d1-police-station-adam-market-triplicane-rest146060",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "10162",
+            "name": "Namma Veedu Vasanta Bhavan",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/9/16/2f4f9994-7db0-4aca-a6b9-e4f10e56132b_10162.jpg",
+            "locality": "South Mada Street",
+            "areaName": "Mylapore",
+            "costForTwo": "\u20B9150 for two",
+            "cuisines": [
+                "South Indian",
+                "Chinese",
+                "Chaat",
+                "Sweets",
+                "Juices"
+            ],
+            "avgRating": 4.6,
+            "veg": true,
+            "parentId": "1263",
+            "avgRatingString": "4.6",
+            "totalRatingsString": "47K+",
+            "sla": {
+                "deliveryTime": 32,
+                "lastMileTravel": 7.5,
+                "serviceability": "SERVICEABLE",
+                "slaString": "30-35 mins",
+                "lastMileTravelString": "7.5 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-03-27 23:00:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "Green%20Dot%20Awards/Best%20In%20Veg%20Meals.png",
+                        "description": "Delivery!"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "aggregatedDiscountInfoV2": {},
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "Delivery!",
+                                    "imageId": "Green%20Dot%20Awards/Best%20In%20Veg%20Meals.png"
+                                }
+                            }
+                        ]
+                    },
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "4.2",
+                    "ratingCount": "2.6K+"
+                },
+                "source": "GOOGLE",
+                "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-13450fd8-0309-4863-a562-97aafc8a83cf"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/chennai/namma-veedu-vasanta-bhavan-south-mada-street-mylapore-rest10162",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "372531",
+            "name": "Kwality Walls Ice Cream and More",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/6/13/e355aa6b-bc56-4d39-ac2b-a657033916c2_372531.JPG",
+            "locality": "Chetpet",
+            "areaName": "Triplicane",
+            "costForTwo": "\u20B9300 for two",
+            "cuisines": [
+                "Desserts",
+                "Ice Cream",
+                "Ice Cream Cakes"
+            ],
+            "avgRating": 4.6,
+            "veg": true,
+            "parentId": "582",
+            "avgRatingString": "4.6",
+            "totalRatingsString": "773",
+            "sla": {
+                "deliveryTime": 23,
+                "lastMileTravel": 5,
+                "serviceability": "SERVICEABLE",
+                "slaString": "20-25 mins",
+                "lastMileTravelString": "5.0 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-03-27 23:00:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "v1695133679/badges/Pure_Veg111.png",
+                        "description": "pureveg"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "pureveg",
+                                    "imageId": "v1695133679/badges/Pure_Veg111.png"
+                                }
+                            }
+                        ]
+                    },
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "\u20B9150 OFF",
+                "subHeader": "ABOVE \u20B9399",
+                "discountTag": "FLAT DEAL"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-13450fd8-0309-4863-a562-97aafc8a83cf"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/chennai/kwality-walls-ice-cream-and-more-chetpet-triplicane-rest372531",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "10108",
+            "name": "Meat and Eat",
+            "cloudinaryImageId": "o7jmumglefb1mc1dm93c",
+            "locality": "Ameerjan Street",
+            "areaName": "Kodambakkam",
+            "costForTwo": "\u20B9250 for two",
+            "cuisines": [
+                "Indian"
+            ],
+            "avgRating": 4.4,
+            "parentId": "632",
+            "avgRatingString": "4.4",
+            "totalRatingsString": "13K+",
+            "sla": {
+                "deliveryTime": 30,
+                "lastMileTravel": 6.2,
+                "serviceability": "SERVICEABLE",
+                "slaString": "30-35 mins",
+                "lastMileTravelString": "6.2 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-03-27 09:59:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "40% OFF",
+                "subHeader": "UPTO \u20B980"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-13450fd8-0309-4863-a562-97aafc8a83cf"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/chennai/meat-and-eat-ameerjan-street-kodambakkam-rest10108",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "15214",
+            "name": "Id - Chennai's Everyday Soulful",
+            "cloudinaryImageId": "d83c9619b2fb7a1edc94432fe9fe10cb",
+            "locality": "Vadapalani",
+            "areaName": "Vadapalani",
+            "costForTwo": "\u20B9300 for two",
+            "cuisines": [
+                "South Indian",
+                "Snacks",
+                "Chaat",
+                "Beverages",
+                "Desserts",
+                "Thalis",
+                "Juices"
+            ],
+            "avgRating": 4.5,
+            "parentId": "472676",
+            "avgRatingString": "4.5",
+            "totalRatingsString": "14K+",
+            "sla": {
+                "deliveryTime": 67,
+                "lastMileTravel": 10.4,
+                "serviceability": "SERVICEABLE",
+                "slaString": "65-70 mins",
+                "lastMileTravelString": "10.4 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-03-28 00:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "aggregatedDiscountInfoV2": {},
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "4.1",
+                    "ratingCount": "2.7K+"
+                },
+                "source": "GOOGLE",
+                "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-13450fd8-0309-4863-a562-97aafc8a83cf"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/chennai/id-chennais-everyday-soulful-vadapalani-rest15214",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "556985",
+            "name": "The Brooklyn Creamery - Healthy Ice Cream",
+            "cloudinaryImageId": "b1b35780a9b1dfeb26d680506d494eaa",
+            "locality": "PERAMBUR",
+            "areaName": "THIRUNAVUKARASU STREET",
+            "costForTwo": "\u20B9200 for two",
+            "cuisines": [
+                "Ice Cream",
+                "Desserts",
+                "Healthy Food"
+            ],
+            "avgRating": 4.2,
+            "veg": true,
+            "parentId": "236673",
+            "avgRatingString": "4.2",
+            "totalRatingsString": "102",
+            "sla": {
+                "deliveryTime": 37,
+                "lastMileTravel": 5.7,
+                "serviceability": "SERVICEABLE",
+                "slaString": "35-40 mins",
+                "lastMileTravelString": "5.7 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-03-27 23:30:00",
+                "opened": true
+            },
+            "badges": {
+                "textExtendedBadges": [
+                    {
+                        "iconId": "guiltfree/GF_Logo_android_3x",
+                        "shortDescription": "brand",
+                        "fontColor": "#7E808C"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "",
+                                    "fontColor": "#7E808C",
+                                    "iconId": "guiltfree/GF_Logo_android_3x",
+                                    "shortDescription": "brand"
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "ITEMS",
+                "subHeader": "AT \u20B969"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-13450fd8-0309-4863-a562-97aafc8a83cf"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/chennai/the-brooklyn-creamery-healthy-ice-cream-perambur-thirunavukarasu-street-rest556985",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "241942",
+            "name": "Ps4 Veg Restaurant (Perambur Sri Srinivasa)",
+            "cloudinaryImageId": "jszjbkxdgm0nzjozryif",
+            "locality": "Venus",
+            "areaName": "Perambur",
+            "costForTwo": "\u20B9300 for two",
+            "cuisines": [
+                "Sweets"
+            ],
+            "avgRating": 4.6,
+            "veg": true,
+            "parentId": "560050",
+            "avgRatingString": "4.6",
+            "totalRatingsString": "2.5K+",
+            "sla": {
+                "deliveryTime": 39,
+                "lastMileTravel": 5.7,
+                "serviceability": "SERVICEABLE",
+                "slaString": "35-40 mins",
+                "lastMileTravelString": "5.7 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-03-27 23:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "20% OFF",
+                "subHeader": "UPTO \u20B950"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-13450fd8-0309-4863-a562-97aafc8a83cf"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/chennai/ps4-veg-restaurant-perambur-sri-srinivasa-venus-perambur-rest241942",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "450180",
+            "name": "The Brownie Studio",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/2/24/e998d05c-f441-46e0-b886-27632241a846_450180.jpg",
+            "locality": "Mg Road",
+            "areaName": "Adyar",
+            "costForTwo": "\u20B9450 for two",
+            "cuisines": [
+                "Bakery",
+                "Cakes",
+                "Desserts",
+                "Ice Cream",
+                "Sweets"
+            ],
+            "avgRating": 4.7,
+            "parentId": "5976",
+            "avgRatingString": "4.7",
+            "totalRatingsString": "1.7K+",
+            "sla": {
+                "deliveryTime": 35,
+                "lastMileTravel": 12,
+                "serviceability": "SERVICEABLE",
+                "slaString": "35-40 mins",
+                "lastMileTravelString": "12.0 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-03-27 23:30:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "Green%20Dot%20Awards/Best%20In%20Desserts.png",
+                        "description": "Delivery!"
+                    },
+                    {
+                        "imageId": "Rxawards/_CATEGORY-Desserts.png",
+                        "description": "Delivery!"
+                    },
+                    {
+                        "imageId": "newg.png",
+                        "description": "Gourmet"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "Delivery!",
+                                    "imageId": "Green%20Dot%20Awards/Best%20In%20Desserts.png"
+                                }
+                            },
+                            {
+                                "attributes": {
+                                    "description": "Delivery!",
+                                    "imageId": "Rxawards/_CATEGORY-Desserts.png"
+                                }
+                            },
+                            {
+                                "attributes": {
+                                    "description": "Gourmet",
+                                    "imageId": "newg.png"
+                                }
+                            }
+                        ]
+                    },
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "ITEMS",
+                "subHeader": "AT \u20B999"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-13450fd8-0309-4863-a562-97aafc8a83cf"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/chennai/the-brownie-studio-mg-road-adyar-rest450180",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "58049",
+            "name": "Perambur Sri Srinivasa Sweets and Snacks",
+            "cloudinaryImageId": "gaew0xqnlq7rhi91fkzv",
+            "locality": "Opposite Perambur Railway Station",
+            "areaName": "Perambur",
+            "costForTwo": "\u20B9300 for two",
+            "cuisines": [
+                "South Indian"
+            ],
+            "avgRating": 4.6,
+            "veg": true,
+            "parentId": "230942",
+            "avgRatingString": "4.6",
+            "totalRatingsString": "32K+",
+            "sla": {
+                "deliveryTime": 25,
+                "lastMileTravel": 5,
+                "serviceability": "SERVICEABLE",
+                "slaString": "25-30 mins",
+                "lastMileTravelString": "5.0 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-03-27 23:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "20% OFF",
+                "subHeader": "UPTO \u20B950"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-13450fd8-0309-4863-a562-97aafc8a83cf"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/chennai/perambur-sri-srinivasa-sweets-and-snacks-opposite-railway-station-perambur-rest58049",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "12615",
+            "name": "Ratna Cafe (Estd.1948)",
+            "cloudinaryImageId": "zyyduavcmpinwpyontgb",
+            "locality": "Triplicane",
+            "areaName": "Royapettah",
+            "costForTwo": "\u20B9300 for two",
+            "cuisines": [
+                "South Indian",
+                "Sweets"
+            ],
+            "avgRating": 4.6,
+            "veg": true,
+            "parentId": "167537",
+            "avgRatingString": "4.6",
+            "totalRatingsString": "44K+",
+            "sla": {
+                "deliveryTime": 28,
+                "lastMileTravel": 4.6,
+                "serviceability": "SERVICEABLE",
+                "slaString": "25-30 mins",
+                "lastMileTravelString": "4.6 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-03-27 22:30:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "ITEMS",
+                "subHeader": "AT \u20B950"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-13450fd8-0309-4863-a562-97aafc8a83cf"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/chennai/ratna-cafe-estd-1948-triplicane-royapettah-rest12615",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "19145",
+            "name": "Cafe Coffee Day",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/11/19/0852dfa0-855b-4fa2-88e7-b583bf001bb7_19145.JPG",
+            "locality": "Indira Nagar",
+            "areaName": "Adyar",
+            "costForTwo": "\u20B9400 for two",
+            "cuisines": [
+                "Beverages",
+                "Cafe",
+                "Snacks",
+                "Desserts",
+                "Burgers",
+                "Ice Cream",
+                "Bakery",
+                "Fast Food"
+            ],
+            "avgRating": 4.4,
+            "parentId": "1",
+            "avgRatingString": "4.4",
+            "totalRatingsString": "5.4K+",
+            "sla": {
+                "deliveryTime": 43,
+                "lastMileTravel": 11.7,
+                "serviceability": "SERVICEABLE",
+                "slaString": "40-45 mins",
+                "lastMileTravelString": "11.7 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-03-28 05:59:00",
+                "opened": true
+            },
+            "badges": {
+                "textExtendedBadges": [
+                    {
+                        "iconId": "guiltfree/GF_Logo_android_3x",
+                        "shortDescription": "options available",
+                        "fontColor": "#7E808C"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "",
+                                    "fontColor": "#7E808C",
+                                    "iconId": "guiltfree/GF_Logo_android_3x",
+                                    "shortDescription": "options available"
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "ITEMS",
+                "subHeader": "AT \u20B999"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-13450fd8-0309-4863-a562-97aafc8a83cf"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/chennai/cafe-coffee-day-indira-nagar-adyar-rest19145",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "15924",
+            "name": "House of Idlies",
+            "cloudinaryImageId": "xjsfreyjmosumy1tircn",
+            "locality": "T Nagar",
+            "areaName": "Thyagaraya Nagar",
+            "costForTwo": "\u20B9200 for two",
+            "cuisines": [
+                "South Indian"
+            ],
+            "avgRating": 4.5,
+            "veg": true,
+            "parentId": "8455",
+            "avgRatingString": "4.5",
+            "totalRatingsString": "49K+",
+            "sla": {
+                "deliveryTime": 40,
+                "lastMileTravel": 7,
+                "serviceability": "SERVICEABLE",
+                "slaString": "35-40 mins",
+                "lastMileTravelString": "7.0 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-03-27 23:00:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "v1695133679/badges/Pure_Veg111.png",
+                        "description": "pureveg"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "pureveg",
+                                    "imageId": "v1695133679/badges/Pure_Veg111.png"
+                                }
+                            }
+                        ]
+                    },
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "20% OFF",
+                "subHeader": "UPTO \u20B950"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "4.2",
+                    "ratingCount": "1.5K+"
+                },
+                "source": "GOOGLE",
+                "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-13450fd8-0309-4863-a562-97aafc8a83cf"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/chennai/house-of-idlies-t-nagar-thyagaraya-nagar-rest15924",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "10540",
+            "name": "Murugan Idli Shop",
+            "cloudinaryImageId": "dxbhclodfh0m6oegdqeh",
+            "locality": "Thyagaraya Nagar",
+            "areaName": "Besant Nagar",
+            "costForTwo": "\u20B9300 for two",
+            "cuisines": [
+                "South Indian"
+            ],
+            "avgRating": 4.6,
+            "parentId": "1248",
+            "avgRatingString": "4.6",
+            "totalRatingsString": "43K+",
+            "sla": {
+                "deliveryTime": 56,
+                "lastMileTravel": 12.7,
+                "serviceability": "SERVICEABLE",
+                "slaString": "55-60 mins",
+                "lastMileTravelString": "12.7 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-03-27 23:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "aggregatedDiscountInfoV2": {},
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "4.0",
+                    "ratingCount": "13K+"
+                },
+                "source": "GOOGLE",
+                "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-13450fd8-0309-4863-a562-97aafc8a83cf"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/chennai/murugan-idli-shop-thyagaraya-nagar-besant-nagar-rest10540",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "262948",
+            "name": "Perambur Sri Srinivasa (Bhavan)",
+            "cloudinaryImageId": "bogj3f009rjyo7b5omgx",
+            "locality": "Sembium",
+            "areaName": "Chennai",
+            "costForTwo": "\u20B9300 for two",
+            "cuisines": [
+                "South Indian"
+            ],
+            "avgRating": 4.6,
+            "veg": true,
+            "parentId": "5939",
+            "avgRatingString": "4.6",
+            "totalRatingsString": "27K+",
+            "sla": {
+                "deliveryTime": 39,
+                "lastMileTravel": 5.7,
+                "serviceability": "SERVICEABLE",
+                "slaString": "35-40 mins",
+                "lastMileTravelString": "5.7 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-03-27 23:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "20% OFF",
+                "subHeader": "UPTO \u20B950"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-13450fd8-0309-4863-a562-97aafc8a83cf"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/chennai/perambur-sri-srinivasa-bhavan-sembium-chennai-rest262948",
+            "type": "WEBLINK"
+        }
+    }
+];
+exports.default = RES_LIST;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"675A4":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$8c6a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$8c6a.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$8c6a.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _constants = require("../utils/constants");
+const Card = (props)=>{
+    const { resData } = props;
+    const { name, cloudinaryImageId, costForTwo, cuisines, avgRating } = resData?.info;
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "card",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                alt: "res-img",
+                className: "res-img",
+                src: (0, _constants.CDN_URL) + cloudinaryImageId
+            }, void 0, false, {
+                fileName: "components/RestrauntCard.js",
+                lineNumber: 8,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "res-details",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: name
+                    }, void 0, false, {
+                        fileName: "components/RestrauntCard.js",
+                        lineNumber: 14,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: avgRating
+                    }, void 0, false, {
+                        fileName: "components/RestrauntCard.js",
+                        lineNumber: 15,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        className: "cuisines",
+                        children: cuisines.join(',')
+                    }, void 0, false, {
+                        fileName: "components/RestrauntCard.js",
+                        lineNumber: 16,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: costForTwo
+                    }, void 0, false, {
+                        fileName: "components/RestrauntCard.js",
+                        lineNumber: 17,
+                        columnNumber: 11
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "components/RestrauntCard.js",
+                lineNumber: 13,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "components/RestrauntCard.js",
+        lineNumber: 7,
+        columnNumber: 7
+    }, undefined);
+};
+_c = Card;
+exports.default = Card;
+var _c;
+$RefreshReg$(_c, "Card");
+
+  $parcel$ReactRefreshHelpers$8c6a.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","../utils/constants":"jcEU6"}]},["jERri","blcJa"], "blcJa", "parcelRequire0e11", null, null, "http://localhost:1234")
 
 //# sourceMappingURL=REACTBASICS.cb65f72e.js.map
