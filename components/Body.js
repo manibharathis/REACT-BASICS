@@ -5,13 +5,26 @@ import Card from "./RestrauntCard";
 
 
 
-
 const Body = () => {
-    const [filterData,setfilterData] = useState(RES_LIST);
+  const [ListOfRestraunts,setListOfRestraunts] = useState([]);
+  useEffect(()=>{
+    fetchData();
+  },[])
+
+  const fetchData = async() =>{
+   const data = await fetch('https://www.swiggy.com/dapi/restaurants/list/v5?lat=13.0843007&lng=80.2704622&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING')
+   const json = await data.json()
+   console.log(json)
+   const reslist = json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+   setListOfRestraunts(reslist)
+   
+  }
     const handleTopRated = () =>{
         const filter = filterData.filter(e=>e.info.avgRating>4.5)
         setfilterData(filter)
     }
+
+  
   return (
     <div>
       <div className="search-container">
