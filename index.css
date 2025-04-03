@@ -19,29 +19,52 @@
     font-size: large;
 }
 
+
 .search-container {
     padding: 8px;
-    display: inline-flex;
-    justify-content: space-between;
+   margin-left:100px;
 }
 .search-bar{
     padding-right: 20px;
+    margin-left: 20px;
 }
 .card-box{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 
 }
-.card-container{
+.shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.shimmer{
+  
   background-color: lightgray;
     width: 200px ;
+    height: 500px;
     padding: 5px;
-   margin : 5px;
-   
-  
+   margin : 20px;
+}
+.card-container{
+    background-color: lightgray;
+    width: 200px ;
+    height: 500px;
+    padding: 5px;
+   margin : 20px;
     
 } 
+.cuisines-container{
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.cuisines{
+    font-size: small;
+     overflow-wrap:anywhere; 
+    
+}
 
 .card-container:hover {
     border: solid black 1px ;
@@ -53,6 +76,14 @@
 .res-details{
     padding-left: 20px;
 }
-.Filter{
+.filter{
     margin: 5px;
+}
+.login{
+    height: 40px;
+    width: auto;
+   
+    margin-top: 70px;
+    font-size: medium;
+    margin-right: 20px;
 }

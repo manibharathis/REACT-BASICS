@@ -13,7 +13,9 @@ import { CDN_URL } from "../utils/constants";
         <div className="res-details">
           <p>{name}</p>
           <p>{avgRating}</p>
+          <div className="cuisines-container">
           <p className="cuisines">{cuisines.join(',')}</p>
+          </div>
           <p>{costForTwo}</p>
         </div>
       </div>

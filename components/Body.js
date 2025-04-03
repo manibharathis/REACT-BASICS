@@ -1,7 +1,8 @@
 import React from "react";
-import { useState } from "react";
+import { useState , useEffect} from "react";
 import RES_LIST from "../utils/restrauntList";
 import Card from "./RestrauntCard";
+import Shimmer from "./Shimmer";
 
 
 
@@ -24,7 +25,12 @@ const Body = () => {
         setfilterData(filter)
     }
 
-  
+  if(ListOfRestraunts.length == 0){
+      return(
+        <Shimmer />
+        
+      )
+  }
   return (
     <div>
       <div className="search-container">
@@ -34,7 +40,7 @@ const Body = () => {
         <button className="filter" onClick={handleTopRated}>Fitler Top  Restraunts</button>
       </div>
       <div className="card-box">
-        {filterData.map((res) => (
+        {ListOfRestraunts.map((res) => (
           <div className="card-container" key={res.info.id}>
             <Card resData={res} key={res.info.id} />
           </div>
