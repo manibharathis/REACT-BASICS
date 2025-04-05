@@ -18,7 +18,7 @@ const Body = () => {
   },[])
 
   const fetchData = async() =>{
-   const data = await fetch('https://www.swiggy.com/dapi/restaurants/list/v5?lat=13.0843007&lng=80.2704622&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING')
+   const data = await fetch('https://proxy.corsfix.com/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=13.0843007&lng=80.2704622&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING')
    const json = await data.json()
    //console.log(json)
    const reslist = json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
@@ -43,13 +43,9 @@ const Body = () => {
     
     }
     const handleSearch=(e)=>{
-      console.log(e.target.value)
       setSearch(e.target.value)
       if(e.target.value.length==0 && isfiltered==true) 
         return setFilterRestraunts(filteredRestraunts)
-      else if(e.target.value==0){
-        return setFilterRestraunts(ListOfRestraunts)
-      }
       let filteredres = ListOfRestraunts.filter(f=>f.info.name.toLowerCase().includes(e.target.value.toLowerCase()))
       setFilterRestraunts(filteredres)
     }
@@ -69,6 +65,7 @@ const Body = () => {
         {!isfiltered?<button className="filter" onClick={handleTopRated}>Fitler Top  Restraunts</button>:<button className="filter" onClick={handleRemoveFilter}>remove filter</button>}
         
         <input type='text'  value={search} onChange={handleSearch}/>
+        
       </div>
       <div className="card-box">
         {filteredRestraunts.map((res) => (
