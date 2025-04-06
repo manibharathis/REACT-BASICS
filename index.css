@@ -90,3 +90,12 @@
 .searchbutton{
     margin-left: 2px;
 }
+
+
+.err-message{
+    margin-left: 30%;
+}
+.err-kitty{
+    height: 50%;
+    width: 500px;
+}
