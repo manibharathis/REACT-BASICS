@@ -3,7 +3,7 @@ import { useState , useEffect} from "react";
 import RES_LIST from "../utils/restrauntList";
 import Card from "./RestrauntCard";
 import Shimmer from "./Shimmer";
-
+import { Link } from "react-router-dom";
 //whenver change in state varibale react rigggers reconcialtion algorithm
 
 const Body = () => {
@@ -70,7 +70,7 @@ const Body = () => {
       <div className="card-box">
         {filteredRestraunts.map((res) => (
           <div className="card-container" key={res.info.id}>
-            <Card resData={res} key={res.info.id} />
+           <Link to={'/restraunts/'+res.info.id}> <Card resData={res} key={res.info.id} /> </Link> 
           </div>
         ))}
       </div>
