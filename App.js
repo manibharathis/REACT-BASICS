@@ -6,14 +6,14 @@ import About from './components/About'
 import Error from './components/Error'
 import Contact from './components/Contact'
 import ResMenu from './components/ResMenu'
-import { createBrowserRouter, RouterProvider, Outlet, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom'
 
 
 
 const MainDiv = () => (
   <div>
     <Header />
-   <Outlet />
+    <Outlet />
   </div>
 );
 const appRouter = createBrowserRouter([
