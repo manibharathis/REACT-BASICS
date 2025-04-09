@@ -4,21 +4,30 @@ import React from "react"
 import { Component } from "react"
 class About extends Component{
 constructor(){
-    console.log("parent contructor")
+  //  console.log("parent contructor")
     super()
+    this.state={
+        gitData : "",
+        name : ""
+    }
 }
-componentDidMount(){
-    console.log("parent component did mount")
+async componentDidMount(){
+   // console.log("parent component did mount")
+    const data = await fetch('https://api.github.com/users/manibharathis')
+    const jsonData = await data.json()
+    console.log(jsonData)
+    this.setState(jsonData)
 }
+
 render(){
-    console.log("parent render")
+   // console.log("parent render")
+    
     return(
         <div className="about">
-                    <h3>About</h3>
+                    
                    
-                    <UserClass name={'Mani Bharathi 1'} phone={'9894459170'} mail={'remasekar.96@gmail.com'} location={'chennai'}/>
-                    <UserClass name={'Mani Bharathi 2'} phone={'9894459170'} mail={'remasekar.96@gmail.com'} location={'chennai'}/>
-                    <UserClass name={'Mani Bharathi 3'} phone={'9894459170'} mail={'remasekar.96@gmail.com'} location={'chennai'}/>
+                    <UserClass name={"mani"} phone={'9894459170'} mail={'remasekar.96@gmail.com'} location={'chennai'}/>
+                   
                 </div>
     )
 }
