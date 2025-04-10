@@ -4,8 +4,9 @@ import { RES_LIST_URL } from "../utils/constants";
 import Card from "./RestrauntCard";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
 //whenver change in state varibale react rigggers reconcialtion algorithm
-
+import Offline from "./Offline";
 const Body = () => {
   const [ListOfRestraunts,setListOfRestraunts] = useState([]);
   const [filteredRestraunts,setFilterRestraunts] = useState([]);
@@ -16,6 +17,16 @@ const Body = () => {
    
     console.log("use effect called")
   },[])
+  const isOnline = useOnlineStatus()
+  console.log(isOnline)
+  if(isOnline===false){
+
+    return(
+      <div>
+        <Offline />
+      </div>
+    )
+  }
   const fetchData = async() =>{
    const data = await fetch(RES_LIST_URL)
    const json = await data.json()
@@ -48,7 +59,7 @@ const Body = () => {
       let filteredres = ListOfRestraunts.filter(f=>f.info.name.toLowerCase().includes(e.target.value.toLowerCase()))
       setFilterRestraunts(filteredres)
     }
-
+   
   if(ListOfRestraunts.length == 0){
       return(
         <Shimmer />
