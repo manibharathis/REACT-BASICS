@@ -14,6 +14,7 @@ class UserClass extends React.Component {
     console.log(jsonData);
     this.setState({gitData:jsonData});
   }
+  
   render() {
     // console.log(this.props.name+"child render")
     console.log(this.state.gitData.name)

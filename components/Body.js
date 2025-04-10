@@ -1,6 +1,6 @@
 import React from "react";
 import { useState , useEffect} from "react";
-import RES_LIST from "../utils/restrauntList";
+import { RES_LIST_URL } from "../utils/constants";
 import Card from "./RestrauntCard";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
@@ -16,9 +16,8 @@ const Body = () => {
    
     console.log("use effect called")
   },[])
-
   const fetchData = async() =>{
-   const data = await fetch('https://proxy.corsfix.com/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=13.0843007&lng=80.2704622&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING')
+   const data = await fetch(RES_LIST_URL)
    const json = await data.json()
    //console.log(json)
    const reslist = json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
