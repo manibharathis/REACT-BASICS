@@ -15,7 +15,7 @@ const Header=()=>{
     <div className='nav-links'>
        <div className="online-status">Online Status:  {isOnline ? "✅" : "🔴"}</div>
         <div className='home'><Link to='/'>Home</Link></div>
-        <div className='about'><Link to="/about">About</Link>t</div>
+        <div className='about'><Link to="/about">About</Link></div>
         <div className='contact-us'><Link to="/contact">Contact Us</Link></div>
         <div className='cart'>Cart</div>
         {isLogin?<button className='login' onClick={()=>{setIsLogin(!isLogin)}}>Logout</button>:<button className='login'  onClick={handleClick}>Login</button>}
