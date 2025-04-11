@@ -18,6 +18,7 @@ const Header=()=>{
         <div className='about'><Link to="/about">About</Link></div>
         <div className='contact-us'><Link to="/contact">Contact Us</Link></div>
         <div className='cart'>Cart</div>
+        <div className='groceries'><Link to="/grocery">Groceries</Link></div>
         {isLogin?<button className='login' onClick={()=>{setIsLogin(!isLogin)}}>Logout</button>:<button className='login'  onClick={handleClick}>Login</button>}
         
     </div>

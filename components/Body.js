@@ -7,10 +7,12 @@ import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import useResList from "../utils/useResList";
 import Offline from "./Offline";
+
 const Body = () => {
   const resList = useResList();
   useEffect(() => {
     setFilterRestraunts(resList);
+    
   }, [resList]);
 
   const [isfiltered, setIsFiltered] = useState(false);
