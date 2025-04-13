@@ -10,17 +10,20 @@ const Header=()=>{
     const isOnline= useOnlineStatus()
 
     return(
-    <div className ='flex justify-between' >
+    <div className ='flex justify-between bg-orange-100 h-30' >
     <img className='w-56'  src={LOGO_URL}/>
-    <div className=' flex mt-7 justify-evenly'>
-       <div className="online-status">Online Status:  {isOnline ? "✅" : "🔴"}</div>
-        <div className='home'><Link to='/'>Home</Link></div>
-        <div className='about'><Link to="/about">About</Link></div>
-        <div className='contact-us'><Link to="/contact">Contact Us</Link></div>
-        <div className='cart'>Cart</div>
-        <div className='groceries'><Link to="/grocery">Groceries</Link></div>
-        {isLogin?<button className='login' onClick={()=>{setIsLogin(!isLogin)}}>Logout</button>:<button className='login'  onClick={handleClick}>Login</button>}
-        
+    <div className=' flex mt-7 items-center'>
+        <ul className="flex justify-between">
+       <li className="px-4 py-1">Online Status:  {isOnline ? "✅" : "🔴"}</li>
+        <li className='px-4 py-1'><Link to='/'>Home</Link></li>
+        <li className='px-4 py-1'><Link to="/about">About</Link></li>
+        <li className='px-4 py-1'><Link to="/contact">Contact Us</Link></li>
+        <li className='px-4 py-1'>Cart</li>
+        <li className='px-4 py-1'><Link to="/grocery">Groceries</Link></li>
+       <li className="mb-2 px-4 bg-orange-400 hover:bg-orange-700 text-white font-bold py-1  rounded-full "> {isLogin?<button  className="" onClick={()=>{setIsLogin(!isLogin)}}>Logout</button>:<button className='login'  onClick={handleClick}>Login</button>}
+       
+       </li>
+        </ul>
     </div>
     </div>
     )

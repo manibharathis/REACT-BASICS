@@ -4,19 +4,19 @@ import { CDN_URL } from "../utils/constants";
     const { name, cloudinaryImageId, costForTwo, cuisines, avgRating } =
       resData?.info;
     return (
-      <div className="card">
+      <div className="m-4 p-4 w-[250px] rounded-lg bg-gray-100 hover:bg-gray-200">
         <img
           alt="res-img"
-          className="res-img"
+          className="w-48 ml-4 rounded-lg"
           src={CDN_URL + cloudinaryImageId}
         ></img>
-        <div className="res-details">
-          <p>{name}</p>
-          <p>{avgRating}</p>
-          <div className="cuisines-container">
-          <p className="cuisines">{cuisines.join(',')}</p>
-          </div>
-          <p>{costForTwo}</p>
+        <div >
+          <p className="font-bold py-4 ml-4 text-lg">{name}</p>
+          <p className="ml-4">{avgRating}</p>
+         
+          <div className=" ml-4 overflow-hidden text-ellipsis">{cuisines.join(',')}</div>
+          
+          <p className="ml-4">{costForTwo}</p>
         </div>
       </div>
     );

@@ -55,20 +55,21 @@ const Body = () => {
   }
   return (
     <div>
-      <div className="search-container">
+      
+      <div className="flex">
         {!isfiltered ? (
-          <button className="filter" onClick={handleTopRated}>
+          <button className="mb-2 px-4 bg-orange-400 hover:bg-orange-700 text-white font-bold py-1  rounded-full " onClick={handleTopRated}>
             Fitler Top Restraunts
           </button>
         ) : (
-          <button className="filter" onClick={handleRemoveFilter}>
+          <button className="mb-2 px-4 bg-orange-400 hover:bg-orange-700 text-white font-bold py-1  rounded-full " onClick={handleRemoveFilter}>
             remove filter
           </button>
         )}
-
-        <input type="text" value={search} onChange={handleSearch} />
+ 
+        <input type="text" className=" ml-2 mb-2 w-1/5 p-4 ps-10 text-sm text-black border-orange-700 rounded-full bg-orange-100 focus:ring-blue-500 focus:border-blue-500 " placeholder="Search burger, dosa.." value={search} onChange={handleSearch} />
       </div>
-      <div className="card-box">
+      <div className="flex flex-wrap">
         {filteredRestraunts.map((res) => (
           <div className="card-container" key={res.info.id}>
             <Link to={"/restraunts/" + res.info.id}>
