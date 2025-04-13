@@ -1,17 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Header from './components/Header'
-import Body from './components/Body'
+import Header from './src/components/Header'
+import Body from './src/components/Body'
 // import About from './components/About'
-import Error from './components/Error'
-import Contact from './components/Contact'
-import ResMenu from './components/ResMenu'
+import Error from './src/components/Error'
+import Contact from './src/components/Contact'
+import ResMenu from './src/components/ResMenu'
 
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom'
 import { lazy,Suspense } from "react";
 
-const About = lazy(()=>import('./components/About'))
-const Grocery = lazy(()=>import('./components/Grocery'))
+const About = lazy(()=>import('./src/components/About'))
+const Grocery = lazy(()=>import('./src/components/Grocery'))
 const MainDiv = () => (
   <div>
     <Header />

@@ -10,9 +10,9 @@ const Header=()=>{
     const isOnline= useOnlineStatus()
 
     return(
-    <div className ='header' >
-    <img className='logo-img' src={LOGO_URL}/>
-    <div className='nav-links'>
+    <div className ='flex justify-between' >
+    <img className='w-56'  src={LOGO_URL}/>
+    <div className=' flex mt-7 justify-evenly'>
        <div className="online-status">Online Status:  {isOnline ? "✅" : "🔴"}</div>
         <div className='home'><Link to='/'>Home</Link></div>
         <div className='about'><Link to="/about">About</Link></div>

@@ -1,4 +1,4 @@
-import { RES_MENU_URL } from "../utils/constants";
+import { RES_MENU_URL } from "./constants";
 import { useState,useEffect } from "react";
 const useGetResMenu = (resid) => {
   const [resMenuData, setresMenuData] = useState(null);
