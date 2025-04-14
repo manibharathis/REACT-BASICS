@@ -10,7 +10,7 @@ const Header=()=>{
     const isOnline= useOnlineStatus()
 
     return(
-    <div className ='flex justify-between bg-orange-100 h-30' >
+    <div className ='flex justify-between h-30 mb-2 shadow-md' >
     <img className='w-56'  src={LOGO_URL}/>
     <div className=' flex mt-7 items-center'>
         <ul className="flex justify-between">

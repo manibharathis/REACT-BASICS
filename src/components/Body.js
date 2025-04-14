@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { RES_LIST_URL } from "../utils/constants";
-import Card from "./RestrauntCard";
+import Card,{PromotedCard} from "./RestrauntCard";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
@@ -20,6 +20,7 @@ const Body = () => {
   const [filteredRestraunts, setFilterRestraunts] = useState([]);
   const ListOfRestraunts = resList;
   const isOnline = useOnlineStatus(setFilterRestraunts);
+  const PromotedResCard = PromotedCard(Card)
   if (isOnline === false) {
     return (
       <div>
@@ -58,11 +59,11 @@ const Body = () => {
       
       <div className="flex">
         {!isfiltered ? (
-          <button className="mb-2 px-4 bg-orange-400 hover:bg-orange-700 text-white font-bold py-1  rounded-full " onClick={handleTopRated}>
+          <button className="mb-2  px-4 bg-orange-400 hover:bg-orange-700 text-white font-bold py-1  rounded-full " onClick={handleTopRated}>
             Fitler Top Restraunts
           </button>
         ) : (
-          <button className="mb-2 px-4 bg-orange-400 hover:bg-orange-700 text-white font-bold py-1  rounded-full " onClick={handleRemoveFilter}>
+          <button className="mb-2  px-4 bg-orange-400 hover:bg-orange-700 text-white font-bold py-1  rounded-full " onClick={handleRemoveFilter}>
             remove filter
           </button>
         )}
@@ -70,11 +71,14 @@ const Body = () => {
         <input type="text" className=" ml-2 mb-2 w-1/5 p-4 ps-10 text-sm text-black border-orange-700 rounded-full bg-orange-100 focus:ring-blue-500 focus:border-blue-500 " placeholder="Search burger, dosa.." value={search} onChange={handleSearch} />
       </div>
       <div className="flex flex-wrap">
+        {console.log(filteredRestraunts)}
         {filteredRestraunts.map((res) => (
+         
           <div className="card-container" key={res.info.id}>
             <Link to={"/restraunts/" + res.info.id}>
-              {" "}
-              <Card resData={res} key={res.info.id} />{" "}
+             
+             { res.info.avgRating <=4.4 ?<PromotedResCard resData={res} key={res.info.id} /> : 
+              <Card resData={res} key={res.info.id} />}
             </Link>
           </div>
         ))}

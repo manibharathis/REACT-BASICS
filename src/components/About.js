@@ -23,7 +23,7 @@ render(){
    // console.log("parent render")
     
     return(
-        <div className="about">
+        <div className="">
                     
                    
                     <UserClass name={"mani"} phone={'9894459170'} mail={'remasekar.96@gmail.com'} location={'chennai'}/>

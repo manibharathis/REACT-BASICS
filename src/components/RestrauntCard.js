@@ -4,7 +4,7 @@ import { CDN_URL } from "../utils/constants";
     const { name, cloudinaryImageId, costForTwo, cuisines, avgRating } =
       resData?.info;
     return (
-      <div className="m-4 p-4 w-[250px] rounded-lg bg-gray-100 hover:bg-gray-200">
+      <div className="m-4 p-4 w-[250px] rounded-lg bg-gray-100 hover:bg-gray-200 shadow-sm">
         <img
           alt="res-img"
           className="w-48 ml-4 rounded-lg"
@@ -21,6 +21,17 @@ import { CDN_URL } from "../utils/constants";
       </div>
     );
   };
-  
+ export const PromotedCard = (Card)=>{
+    return(props)=>{
+      return(
+        <div>
+          <label className="absolute bg-black rounded-lg text-white m-2 p-2">
+            Promoted
+          </label>
+          <Card {...props} />
+        </div>
+      )
+    }
+  }
 export default Card
   
