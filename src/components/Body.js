@@ -71,7 +71,7 @@ const Body = () => {
         <input type="text" className=" ml-2 mb-2 w-1/5 p-4 ps-10 text-sm text-black border-orange-700 rounded-full bg-orange-100 focus:ring-blue-500 focus:border-blue-500 " placeholder="Search burger, dosa.." value={search} onChange={handleSearch} />
       </div>
       <div className="flex flex-wrap">
-        {console.log(filteredRestraunts)}
+       
         {filteredRestraunts.map((res) => (
          
           <div className="card-container" key={res.info.id}>
