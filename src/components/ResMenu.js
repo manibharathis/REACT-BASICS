@@ -19,7 +19,11 @@ const ResMenu = () => {
 
   const categories = resMenuData.data.cards[4].groupedCard.cardGroupMap.REGULAR.cards.filter((c)=>c?.card?.card?.['@type']==='type.googleapis.com/swiggy.presentation.food.v2.ItemCategory')
   
-
+ const handleClick = (i)=>{
+  if(i===showItems)setShowItems(null)
+    else 
+    setShowItems(i)
+ }
  
   return (
     <div className="text-center w-6/12 mx-auto">
@@ -34,10 +38,7 @@ const ResMenu = () => {
       </h4>
       {categories.map((e,index) => (
         <div className="" key={e.card.card.categoryId}>
-          <div className="flex justify-between cursor-pointer p-4" onClick={()=>{if(index===showItems)setShowItems(null)
-            else 
-            setShowItems(index)
-            }}>
+          <div className="flex justify-between cursor-pointer p-4" onClick={()=>handleClick(index)}>
             <span className="font-bold text-xl">
               
               {e?.card?.card?.title}({e?.card?.card?.itemCards.length})
