@@ -5,7 +5,7 @@ import Shimmer from "../components/Shimmer";
 import ItemList from "./ItemList";
 const ResMenu = () => {
   const { resid } = useParams();
-  const [showItems,setShowItems] = useState(false)
+  const [showItems,setShowItems] = useState(null)
   const dummy = [];
   const resMenuData = useGetResMenu(resid);
   console.log("resmenu", resMenuData);
@@ -19,10 +19,8 @@ const ResMenu = () => {
 
   const categories = resMenuData.data.cards[4].groupedCard.cardGroupMap.REGULAR.cards.filter((c)=>c?.card?.card?.['@type']==='type.googleapis.com/swiggy.presentation.food.v2.ItemCategory')
   
-  console.log(categories)
-  const handleClick = ()=>{
-        setShowItems(!showItems)
-  }
+
+ 
   return (
     <div className="text-center w-6/12 mx-auto">
       <h1 className="font-bold text-2xl">
@@ -34,18 +32,19 @@ const ResMenu = () => {
       <h4 className="text-gray-400 text-sm">
         {resMenuData.data.cards[2]?.card?.card?.info?.costForTwoMessage}
       </h4>
-      {categories.map((e) => (
+      {categories.map((e,index) => (
         <div className="" key={e.card.card.categoryId}>
-          <div className="flex justify-between cursor-pointer p-4" onClick={handleClick}>
+          <div className="flex justify-between cursor-pointer p-4" onClick={()=>{if(index===showItems)setShowItems(null)
+            else 
+            setShowItems(index)
+            }}>
             <span className="font-bold text-xl">
               
               {e?.card?.card?.title}({e?.card?.card?.itemCards.length})
             </span>
             <span>⬇️</span>
             </div>
-            {showItems?<ItemList items={e?.card?.card?.itemCards} /> : " "}
-            
-          
+            {showItems===index?<ItemList items={e?.card?.card?.itemCards}  /> : " "}
           
           <div className=" border-b-gray-200 border-b-8 border-8 border-gray-200 h-4"></div>
         </div>
