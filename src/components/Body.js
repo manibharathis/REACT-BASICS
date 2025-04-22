@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useState, useEffect } from "react";
 import { RES_LIST_URL } from "../utils/constants";
 import Card,{PromotedCard} from "./RestrauntCard";
@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import useResList from "../utils/useResList";
 import Offline from "./Offline";
+import UserContext from "../utils/UserContext";
 
 const Body = () => {
   const resList = useResList();
@@ -14,7 +15,7 @@ const Body = () => {
     setFilterRestraunts(resList);
     
   }, [resList]);
-
+ const {loginName,setUserName} = useContext(UserContext)
   const [isfiltered, setIsFiltered] = useState(false);
   const [search, setSearch] = useState("");
   const [filteredRestraunts, setFilterRestraunts] = useState([]);
@@ -47,7 +48,9 @@ const Body = () => {
     );
     setFilterRestraunts(filteredres);
   };
-
+ const handleLogin = (e)=>{
+  setUserName(e.target.value)
+ }
   if (ListOfRestraunts.length == 0) {
     return <Shimmer />;
   }
@@ -69,6 +72,8 @@ const Body = () => {
         )}
  
         <input type="text" className=" ml-2 mb-2 w-1/5 p-4 ps-10 text-sm text-black border-orange-700 rounded-full bg-orange-100 focus:ring-blue-500 focus:border-blue-500 " placeholder="Search restraunts" value={search} onChange={handleSearch} />
+        <input type="text" className=" ml-2 mb-2 w-1/5 p-4 ps-10 text-sm text-black border-orange-700 rounded-full bg-orange-100 focus:ring-blue-500 focus:border-blue-500 " placeholder="Set login name" value={loginName} onChange={handleLogin} />
+      
       </div>
       <div className="flex flex-wrap">
        
