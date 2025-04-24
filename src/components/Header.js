@@ -29,7 +29,7 @@ const Header=()=>{
             <Link to="/cart">Cart - ({cartItems.length} )</Link>
           </li>
         <li className='px-4 py-1'><Link to="/grocery">Groceries</Link></li>
-       <li className="mb-2 px-4 bg-orange-400 hover:bg-orange-700 text-white font-bold py-1  rounded-full "> {isLogin?<button  className="" onClick={()=>{setIsLogin(!isLogin)}}>Logout</button>:<button className='login'  onClick={handleClick}>Login</button>}
+       <li className="mb-2 px-4 bg-orange-400 hover:bg-orange-700 text-white font-bold py-1  rounded-full "> {isLogin?<button  className="" onClick={()=>{setIsLogin(!isLogin)}}>Logout</button>:<button className='login' name='login'  onClick={handleClick}>Login</button>}
        
        </li>
         </ul>
