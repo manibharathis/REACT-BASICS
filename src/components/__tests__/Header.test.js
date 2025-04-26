@@ -49,8 +49,7 @@ it("Should render Header Component with a Cart item ", () => {
           <Header />
         </Provider>
       </BrowserRouter>
-    );
-  
+    )
     const loginButton = screen.getByRole("button", { name: "Login" });
   
     fireEvent.click(loginButton);
